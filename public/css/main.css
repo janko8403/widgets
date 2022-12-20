@@ -1,0 +1,355 @@
+@font-face {
+    src: url('/fonts/iqos-regular.ttf');
+    font-family: "iqos-regular";
+}
+
+@font-face {
+    src: url('/fonts/iqos-bold.ttf');
+    font-family: "iqos-bold";
+}
+
+@font-face {
+    src: url('/fonts/iqos-light.ttf');
+    font-family: "iqos-light";
+}
+
+html {
+    font-size: 15px;
+    font-family: "iqos-regular";
+    color: #fff;
+    height: 100%;
+}
+
+.overflow-fix {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.content-container {
+    z-index: 4;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body {
+    background: radial-gradient(#246DB4, #1D59A5);
+    color: #fff;
+    min-height:100%;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.main-container {
+    max-width: 640px !important;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: center;
+    z-index:3;
+    position: relative;
+}
+
+input {
+    border-color: #fff;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px !important;
+}
+
+
+.mintop {
+    margin-top: 100px;
+}
+.iq-overlay {
+    background: radial-gradient(#246DB4, #1D59A5);
+    display:none;
+    opacity: 0.99;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width:26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.reg {
+    display: none;
+    z-index: 8;
+    top: 50%;
+    left: 50%;
+    position:fixed;
+    width:500px;
+    margin-left: -250px;
+    margin-top: -250px;
+}
+
+.img1 {
+    display: none;
+    z-index: 8;
+    top: 50%;
+    left: 50%;
+    position:fixed;
+    margin-left: -260px;
+    margin-top: -260px;
+}
+
+.img1-s {
+    width: 520px;
+    height: 520px;
+}
+
+.img2 {
+    display: none;
+    z-index: 8;
+    top: 50%;
+    left: 50%;
+    position:fixed;
+    margin-left: -260px;
+    margin-top: -260px;
+}
+
+.img2-s {
+    width: 520px;
+    height: 520px;
+}
+
+.age-label {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t-text {
+    width: 321px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+.neon-small {
+    width: 130px;
+    cursor: pointer;
+}
+
+.age-button {
+    width: 283px !important;
+}
+
+.mt-ab {
+    margin-top: 80px;
+}
+.mt-ac {
+    margin-top: 80px;
+}
+
+.mt-ad {
+    margin-top: 20px;
+}
+
+.backbutton {
+    background-image: url('/img/back.png');
+    background-size: contain;
+    width: 37px;
+    height: 23px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.backbutton-modal {
+    background-image: url('/img/back.png');
+    background-size: contain;
+    width: 37px;
+    height: 23px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.neo {
+    background-image: url('/img/neon_normal.png');
+    background-size: contain;
+    width: 473px;
+    height: 336px;
+    position: absolute;
+    z-index:1;
+}
+
+.neo1 {
+    top: -180px;
+    right: -350px;
+    overflow: no-display;
+}
+
+.neo2 {
+    bottom: -170px;
+    left: -380px;
+    overflow: no-display;
+    position: fixed;
+}
+
+.ui-datepicker-calendar {
+    display: none;
+}
+
+.idea-description {
+    background-color: #fff;
+    width: 290px;
+    height: 360px;
+    border: 0px;
+    resize: none;
+    padding:15px;
+    border:0px;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.iqnext {
+    max-width:208px;
+}
+
+.ui-datepicker  {
+    width:305px !important;
+}
+
+.ui-datepicker select.ui-datepicker-year {
+    width: 30% !important;
+    background-color: #fff !important;
+}
+
+.ui-datepicker select.ui-datepicker-month {
+    width: 50% !important;
+    background-color: #fff !important;
+    padding: 3px;
+}
+
+.ui-widget-header {
+    background-color :#fff !important;
+    border: 0px !important;
+}
+
+.ui-datepicker-title {
+    background-color: #fff !important;
+}
+
+/*.iqbutton {
+    position:relative;
+    background-color: #3A3748;
+    color: #fff;
+    padding: 10px;
+    border-radius: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+}*/
+
+.iqbutton {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    background-color: #3A3748;
+    color: #fffdfb;
+    -webkit-transition: color .2s ease-out .1s,background-color .2s ease 0s;
+    transition: color .2s ease-out .1s,background-color .2s ease 0s;
+    z-index: 0;
+    position: relative;
+    padding: 10px;
+    border-radius: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+}
+
+.iqbutton:hover {
+    color: #34303d;
+    -webkit-transition: color .2s ease-out .1s,background-color .2s ease .2s;
+    transition: color .2s ease-out .1s,background-color .2s ease .2s;
+    background-color: #00d1d2;
+}
+
+.iqbutton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 0;
+    left: -160%;
+    -webkit-transform: skew(0);
+    transform: skew(0);
+    -webkit-transition: all .35s ease-out;
+    transition: all .35s ease-out;
+    z-index: -1;
+}
+
+.regLink {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.regLink:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor:pointer;
+    color:#fff !important;
+}
+
+.iqbutton:after {
+        background-color: #fffdfb;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 150%;
+        height: 100%;
+        top: 0;
+        left: -160%;
+        transform: skew(0);
+        transition: all.35sease-out;
+        z-index: -1;
+}
+
+.iqbutton:hover::after {
+    left: 0;
+    transform: skew(-20deg);
+}
+
+.error-form {
+    border: 2px solid #ff0000;
+}
+
+.error-agr {
+    color: #ff0000;
+}
+
+.h-s {
+    font-size: 18px;
+    font-family: iqos-regular;
+    text-align: center;
+}
+
+.h-s-l {
+    font-size: 18px;
+    font-family: iqos-light;
+    text-align: center;
+}
+
+.disclamer {
+    font-size: 14px;
+}
